@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.study_1">
+
+    <application                                                            // application에서는 기본 셋팅을 할 수 있다.
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"                              // 여기로 가면 자신의 앱 빌드 첫 화면 상단에 그 글자가 나오는 것을 확인할 수 있다.
+            android:roundIcon="@mipmap/ic_launcher_round"                 // roundIcon은 둥근 모서리 처리.
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".SubActivity">                            // 요기서는 액티비티의 선언을 담당.
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>                                                 // intent-filter는 MainActivity에만 적용이 되어있는 상태
+                <action android:name="android.intent.action.MAIN"/>            // 이 익티비티가 메인이며,
+
+                <category android:name="android.intent.category.LAUNCHER"/>    // 처음으로 시작되는 액티비는 이것이다. 라고 알려주는 구문.
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+// src 폴더는 링크를 모아놓는? 그런 역할..(?)
+// res 폴더는 리소스들을 모아놓는 폴더.
+ // res의 drawble 폴더는 주로 이미지 파일들이 담겨 있다.
+ // layout은 레이아웃 파일들을 모아놓는 몰더.  (액티비티랑 연결해주는 레이아웃들....)
+ // mimipmap은 ic_launcher랑 ic_launcher_round는 앱 아이콘들이 있어 (기본제공) 그 옆에 있는 hdpi나 mdpi들은 해상도야 
+ // values는.. colors.xml : 원하는 컬러들을 선언해놓을 수 있다.(투명도도 ok),  strings.xml : 몬가...참조 변수 느낌. , stryles.xml : 앱테마, 커스템 테마 가능

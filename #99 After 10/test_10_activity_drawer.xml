@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="240dp"                                              // 가로 공간은 240 dp
+        android:layout_height="match_parent"                                            
+        android:layout_gravity="start"                                                // start!_!
+        android:background="#a8a7ff"                                                  // 백그라운드 색상.
+        android:id="@+id/drawer"                                                  // 이것 전체 id가 drawer.
+        android:orientation="vertical">                                              // orientation은 세로.
+
+
+        <Button
+                android:id="@+id/btn_close"                                   // id는 btn_close
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"                                      // 마진 줬어.
+                android:text="메뉴 닫기"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"                  
+                android:text="홍드로이드 메뉴"/>
+
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#223ffc"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="테스트 메뉴"/>
+
+    </LinearLayout>
+</LinearLayout>

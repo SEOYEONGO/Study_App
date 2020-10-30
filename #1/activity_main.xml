@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"                  // 글자 진행 방향은 수직으로 
+        tools:context=".MainActivity">
+
+   <TextView
+           android:layout_width="match_parent"          // match_parent는 부모를 따라간다는 것
+           android:layout_height="wrap_content"         // wrap_content는 세로 길이만큼 감싸주어라.
+           android:textColor="#03A9F4"                  // #ffffff하면 폰트 색상 선택 가능
+           android:textSize="20sp"                      // 20sp
+           android:text="I want to make TRIZ APP."/>
+    <TextView
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"
+            android:textColor="#E91E63"
+            android:text="I'll promise you."/>
+
+</LinearLayout>
